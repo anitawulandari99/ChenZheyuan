@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Chen Zheyuan</title>
+    <link rel="stylesheet" href="chen.css">
+</head>
+<body>
+    <script>
+function tampilWaktu() {
+    const waktu = new Date();
+    const jam = waktu.getHours().toString().padStart(2, '0');
+    const menit = waktu.getMinutes().toString().padStart(2, '0');
+    const detik = waktu.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(tampilWaktu, 1000);
+</script>
+
+<header>
+    <h1>Kritik / Saran</h1>
+</header>
+
+    <main>
+    <div class="form-container">
+
+        <form>
+            <table>
+                <tr>
+                    <td class="label">Nama</td>
+                    <td>
+                        <input type="text" placeholder="masukan Nama Anda">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Kritik</td>
+                    <td>
+                        <textarea placeholder="masukan Kritiknya"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Saran</td>
+                    <td>
+                        <textarea placeholder="masukan Sarannya"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Pesan</td>
+                    <td>
+                        <textarea placeholder="masukan Pesan Anda" class="pesan"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="form-buttons">
+                <button type="submit">Kirim</button>
+                <button type="reset">Batal</button>
+            </div>
+        </form>
+    </div>
+</main>
+<nav>
+    <a href="index.html">BACK TO HOME</a> |
+    <a href="kontak.html">BACK TO CONTACT US</a>
+</nav>
+<footer>
+    <p>&copy; CopyRight [Anita Wulandari - 2026] - 251011700845 - 01SIFP014</p>
+    <p id="jam"></p>
+    </footer>
+
+</body>
+</html>

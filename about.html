@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chen Zheyuan</title>
+  <link href="chen.css" rel="stylesheet">
+</head>
+<body>
+ <script>
+    function tampilWaktu() {
+    const waktu = new Date();
+    const jam = waktu.getHours().toString().padStart(2, '0');
+    const menit = waktu.getMinutes().toString().padStart(2, '0');
+    const detik = waktu.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(tampilWaktu, 1000);
+</script>
+<header>
+  <h1>Chen Zheyuan</h1>
+  <p>Aktor Tiongkok yang dikenal melalui berbagai peran ikonik di drama romantis, sejarah, dan fantasi.</p>
+</header>
+
+<section>
+  <h2>Karakter Chen Zheyuan di Series</h2>
+
+  <div class="card">
+    <h3>Duan Jiaxu</h3>
+    <span>Hidden Love (2023)</span>
+    <p>Duan Jiaxu adalah pria dewasa yang hangat, tenang, dan penuh perhatian. Karakter ini dikenal karena sifatnya yang lembut dan kisah cintanya yang manis bersama Sang Zhi.</p>
+  </div>
+
+  <div class="card">
+    <h3>Xiao Yu'er</h3>
+    <span>Handsome Siblings (2020)</span>
+    <p>Xiao Yu'er merupakan karakter ceria, cerdas, dan licik. Ia tumbuh di dunia persilatan dan dikenal dengan kecerdikan serta kepribadiannya yang bebas.</p>
+  </div>
+
+  <div class="card">
+    <h3>Li Yi Tong (Pangeran Yi)</h3>
+    <span>The Princess and the Werewolf (2023)</span>
+    <p>Seorang pangeran misterius dengan dua identitas. Karakter ini menunjukkan sisi dingin, kuat, namun perlahan berubah karena cinta.</p>
+  </div>
+
+  <div class="card">
+    <h3>Gu Nan Zhou</h3>
+    <span>Mr. Bad (2022)</span>
+    <p>Gu Nan Zhou adalah penulis antagonis yang masuk ke dunia nyata. Karakternya unik, humoris, dan berkembang dari dingin menjadi romantis.</p>
+  </div>
+
+  <div class="card">
+    <h3>Ye Zun</h3>
+    <span>Detective Chinatown (2020)</span>
+    <p>Peran pendukung dengan karakter misterius yang menambah ketegangan dan daya tarik cerita detektif.</p>
+  </div>
+
+</section>
+<nav>
+    <a href="index.html">HOME</a>
+</nav>
+<footer>
+    <p>&copy; CopyRight [Anita Wulandari - 2026] - 251011700845 - 01SIFP014</p>
+    <p id="jam"></p>
+    </footer>
+
+</body>
+</html>

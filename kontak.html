@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chen Zheyuan</title>
+    <link rel="stylesheet" href="chen.css">
+
+</head>
+<body>
+
+<script>
+function tampilWaktu() {
+    const waktu = new Date();
+    const jam = waktu.getHours().toString().padStart(2, '0');
+    const menit = waktu.getMinutes().toString().padStart(2, '0');
+    const detik = waktu.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(tampilWaktu, 1000);
+</script>
+
+<!--NAVIGATION-->
+    <nav>
+        <a href="index.html">HOME</a> |
+        <a href="award.html">AWARDS</a> |
+        <a href="drama.html">LIST SERIES</a> |
+        <a href="foto.html">GALLERY</a> |
+        <a href="kontak.html">CONTACT US</a>
+    </nav>
+
+<main>
+    <div class="anita">
+    <h2>Contact Us</h2>
+    <p>Halo! Nama saya <b>Anita Wulandari</b>, mahasiswa dari program studi Sistem Informasi.  
+    Saya membuat website ini sebagai bentuk <b>apresiasi dan dedikasi</b> saya terhadap aktor berbakat <b>Chen Zheyuan</b>.
+    Melalui situs ini, saya ingin mengumpulkan berbagai informasi, drama, award dan karya yang telah ia bintangi, 
+    agar para penggemar bisa lebih mudah mengenal sosok Chen Zheyuan dan perjalanan kariernya.</p>
+    <p>Selain sebagai tugas akademik dalam mata kuliah <b>Pemrograman Web</b>, website ini juga menjadi wadah bagi saya 
+    untuk belajar dan mengembangkan kemampuan dalam pembuatan halaman web, mulai dari struktur HTML,  desain tampilan, hingga pengelolaan konten.</p>
+    <p>Halaman Contact Us ini kami hadirkan sebagai ruang komunikasi bagi para penggemar dan pengunjung yang ingin berbagi pendapat, pertanyaan, atau dukungan seputar karya, inspirasi, dan perjalanan Chen Zheyuan sebagai seorang aktor.
+    Setiap pesan yang masuk adalah bagian dari semangat kebersamaan, layaknya dukungan <b>Yuan Bao</b> yang selalu mengiringi setiap langkah Yuan.</p>
+ 
+   <p>Dengan itu Bagi Anda Sekalian Yang Tertarik Untuk Mneghubungi Our Team Bisa Memilih/ Memencet Link Dibawah Ini Untuk Menghubungi Kami dan Melakukan/Memberi saran untuk Web Kami.</p>
+   </div>
+</main>
+
+<footer>
+    <p>&copy; CopyRight [Anita Wulandari - 2026] - 251011700845 - 01SIFP014</p>
+    <p id="jam"></p>
+     <div class="mt-2">
+        <a href="https://www.instagram.com/_blueewin?igsh=Mzl5ejd4dGdpYXR1" target="_blank" class="text-white me-3">
+            <i class="bi bi-instagram"></i> Instagram |
+        </a>
+        <a href="https://wa.me/6285819175865" target="_blank" class="text-white">
+            <i class="bi bi-whatsapp"></i> WhatsApp |
+        </a>
+        <a href="tabel.html" target="_blank" class="text-white">
+            <i class="bi bi-whatsapp"></i> Isi Form
+        </a>
+    </div>
+</footer>
+</body>
+</html>
